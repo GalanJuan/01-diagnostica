@@ -2,9 +2,15 @@ import java.util.Scanner;
 
 public class Ejercicio3 {
     public static void main(String[] args) {
-        // TODO: Leer la edad con Scanner
+        Scanner teclado = new Scanner(System.in);
+        int edad = teclado.nextInt();
 
-        // TODO: Evaluar con if / else si es mayor o menor de edad
-
+        if (edad >= 18) {
+            System.out.println("Mayor de edad");
+        } else {
+            System.out.println("Menor de edad");
+        }
+        
+        teclado.close();
     }
 }
