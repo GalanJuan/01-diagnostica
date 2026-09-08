@@ -9,4 +9,16 @@
  * 3. Aplica un layout moderno usando Flexbox (display: flex) o CSS Grid (display: grid).
  */
 
-/* TODO: Escribe aquí tus reglas de estilos CSS */
+
+ .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#titulo-principal {
+    color: #0056b3;
+    background-color: #f4f6f8;
+    margin: 10px;
+}
