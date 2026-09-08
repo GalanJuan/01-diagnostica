@@ -12,20 +12,20 @@
  *     (por ejemplo al hacer click en #btn-saludar o #btn-limpiar).
  */
 
-const botonEnviar = document.querySelector("#btn-saludar");
-const botonBorrar = document.querySelector("#btn-limpiar");
-const campoTexto = document.querySelector("#input-nombre");
-const salidaTexto = document.querySelector("#mensaje-resultado");
+const    botonEnviar = document.querySelector("#btn-saludar");
+const    botonBorrar = document.querySelector("#btn-limpiar");
+const    campoTexto = document.querySelector("#input-nombre");
+const   salidaTexto = document.querySelector("#mensaje-resultado");
 
-function calcularSaludo() {
-    let nombreIngresado = campoTexto.value;
-    salidaTexto.textContent = "Hola " + nombreIngresado;
+function     calcularSaludo() {
+    let  nombreIngresado = campoTexto.value;
+        salidaTexto.textContent = "Hola " + nombreIngresado;
 }
 
 function borrarDatos() {
-    campoTexto.value = "";
-    salidaTexto.textContent = "Esperando interacción...";
+     campoTexto.value = "";
+     salidaTexto.textContent = "Esperando interacción...";
 }
 
-botonEnviar.addEventListener("click", calcularSaludo);
+    botonEnviar.addEventListener("click", calcularSaludo);
 botonBorrar.addEventListener("click", borrarDatos);
